@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <?php
     require_once("head.php");
+
+    var_dump($_POST);
+var_dump($_GET);
 ?>
 <body>
 <?php
@@ -9,17 +12,22 @@
     require_once("menu.php");
 ?>
 <div class="container">
-    <form role="form">
+    <form role="form" name="frm_contato" method="POST" action="<?=$PHP_SELF?>">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome">
+        </div>
         <div class="form-group">
             <label for="email">Email address:</label>
             <input type="email" class="form-control" id="email">
         </div>
         <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd">
+            <label for="assunto">Assunto:</label>
+            <input type="assunto" class="form-control" id="assunto">
         </div>
-        <div class="checkbox">
-            <label><input type="checkbox"> Remember me</label>
+        <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="form-control" rows="3" id="mensagem"></textarea>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>

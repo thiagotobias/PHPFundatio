@@ -28,7 +28,7 @@
         <li><a href="#">Empresa</a></li>
         <li><a href="#">Produtos</a></li>
         <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="contato.php">Contato</a></li>
       </ul>
     </div>
   </nav>
@@ -60,7 +60,7 @@
   <footer>
     <div class="row">
       <div class="col-lg-12">
-        <p>Copyright &copy; Your Website 2014</p>
+        <p>Todos os direitos reservados&copy; <?=date("d/m/Y")?></p>
       </div>
     </div>
   </footer>

@@ -10,7 +10,7 @@
         $assunto = $_POST['assunto'];
         $mensagem = $_POST['mensagem'];
         if(empty($nome) AND empty($email) AND empty($assunto) AND empty($mensagem)){
-            $msg_erro = "Os campos estÃ£o fazios, favor preencher";
+            $msg_erro = "Os campos estão fazios, favor preencher";
             unset($nome);
             unset($email);
             unset($assunto);
@@ -29,7 +29,7 @@
 
         <div class="alert alert-success" role="alert">
             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            Dados enviados com sucesso, abaixo seguem os dados que vocÃª enviou
+            Dados enviados com sucesso, abaixo seguem os dados que você enviou
         </div>
     <?php
     }
